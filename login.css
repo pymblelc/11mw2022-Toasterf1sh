@@ -1,0 +1,93 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-image: url('https://sgmh.org/wp-content/uploads/2020/01/AdobeStock_279753293.jpeg');
+    margin: 0; 
+    padding: 0;
+    
+}
+
+/*the div for username/password inputs*/
+.userinfo {
+    background-color: #22223B;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 60%;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+
+}
+
+/*menu bar at the top */
+.MyHealth {
+    color: #F2E9E4;
+    background-color: #22223B;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-indent: 10px;
+    padding: 20px;
+    font-size: larger;
+    
+
+}
+
+
+/*big login title */
+.heading {
+    color: #F2E9E4;
+}
+
+/*for username and password inputs*/
+.inputtext{ 
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    border-style: line;
+    border-color: #22223B;
+    height: 30px;
+    width: 200px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    text-indent: 5px;
+    
+}
+
+/*space between the username and password */
+.space { 
+    margin: 10px;
+}
+
+/* error message */
+.error-msg {
+    color: red; 
+    font-family: 'Trispace', sans-serif;
+    font-size: small;
+    
+}
+
+/* login button*/
+.loginBtn {
+    color: #F2E9E4;
+    background-color: #9A8C98;
+    border-radius: 5px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* bypass button - to bypass login process*/
+.bypassBtn {
+    background-color: #4A4E69;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}

@@ -7,27 +7,83 @@
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
     <script src="https://docs.opencv.org/3.4.0/opencv.js"></script>
     <script src="scanner.js" defer></script>
+    <link rel="stylesheet" href="scanner.css">
+    
     <title>Results</title>
  <html>
   </head>
       </head>
       <body>
       
-   
-        <h1>Results</h1>
+   <div class="main">
+     <div class="main2">
+
+      <div class="names">
+        <h1 class="results"> Results - </h1>
+        <h1 class="results1">d</h1>
+        <h1 class="results" id="firstname1"></h1>
+        <h1 class="results1">d</h1>
+        <h1 class="results" id="lastname1"></h1>
+     </div>
+
+        <div class="names1">
+          <div class="firstname">
+            <p> First Name: </p>
+            <p class="space">d</p>
+            <p id="firstName"></p>
+          </div>
+
+          <div class="lastname">
+           <p> Last Name: </p>
+           <p class="space">d</p>
+            <p id="lastName"></p>
+          </div>
+        </div>
+
+
+        <div class="birthday">
+        <p> Date of Birth (yyyy/mm/dd):</p>
+        <p class="space">d</p>
+        <p id="birthday"></p>
+        </div>
+        
+        <div class="sex">
+        <p> Sex: </p>
+        <p class="space">d</p>
+        <p id="sex"></p>
+        </div>
+
+        <div class="email">
+          <p> Email: </p>
+          <p class="space">d</p>
+          <p id="email"></p>
+        </div>
+
+        <div class="medicareNumber">
+          <p> Medicare Number: </p>
+          <p class="space">d</p>
+          <p id="medicareNumber"></p>
+        </div>
+
+        <div class="phoneNumber">
+          <p> Phone number: </p>
+          <p class="space">d</p>
+          <p id="phoneNumber"></p>
+        </div>
+
+        <!-- image test -->
         <!-- <img src="imAGES/dataset/train/PNEUMONIA/person1000_virus_1681.jpeg" id="image" style="width: 10rem;"> -->
+        <p class="imageUploads"> Image uploads</p> 
+
+        <div class="images">
         <img id="image2" style="width: 10rem;" >
         <canvas id="canvas" width="64" height="64"></canvas>
-        <p id="confidence"></p>
-        
-        <p>Patient Information</p>
-        <p id="firstName"></p>
-        <p id="lastName"></p>
-        <p id="birthday"></p>
-        <p id="sex"></p>
+          </div>
+
+        <p id="confidence" class="confidence"></p>
 
 
-        <p>Symptoms</p>
+        <p class="symptoms">Symptoms</p>
         <p id="appetite"></p>
         <p id="breathing"></p>
         <p id="chestpains"></p>
@@ -40,8 +96,11 @@
         <p id="nausea"></p>
         <p id="shortbreath"></p>
         <p id="sweating"></p>
-    
-       
+
+        <button id="continue">Save and Continue</button>
+
+    </div> <!-- end of main 2-->
+        </div> <!-- end of main -->
       </body>
   </html> 
       

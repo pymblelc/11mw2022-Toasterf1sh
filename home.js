@@ -82,8 +82,8 @@ var appetite1 = "";
 
 
 // I THINK THIS BE THE ONE AFTER 30 ATTEMPTS
-var imageInput = document.getElementById("imageInput");
-var imageInput2 = document.getElementById("imageInput2");
+var imageInput2 = document.getElementById("imageInput");
+var imageInput = document.getElementById("imageInput2");
  
  // if you expect files by default, make this disabled
   // we will wait until the last file being processed
@@ -130,12 +130,14 @@ var imageInput2 = document.getElementById("imageInput2");
     Promise.all(filePromises)
       .then(() => {
         console.log('ready to submit')
+        alert("Image has been uploaded")
         isFilesReady = true
         console.log(myFiles)
       })
       .catch((error) => {
         console.log(error)
         console.log('something wrong happened')
+        alert("Something wrong has happened")
       })
   })
 
@@ -155,6 +157,7 @@ formElement.addEventListener('submit', handleForm)
 
 // make a function that gives all values of inputs
 function getValues() {
+  
   let values = ""
   values = Array.from(document.querySelectorAll("#form input")).reduce(
     (acc, input) => {
@@ -170,6 +173,20 @@ function getValues() {
           [input.id]: input.files,
           [input.id + "_base64"]: myFiles,
         }
+      } else if (input.type == "radio") {
+        var radios = document.querySelectorAll('input[name="sex"]')
+        for (const f of sex) {
+          if(f.checked) {
+            console.log(f.value)
+            console.log("hello")
+          }
+        }
+
+        return {
+          ...acc,
+          [input.id]: input.checked
+        }
+
       } else {
         return {
           ...acc,
@@ -186,12 +203,10 @@ function getValues() {
 
 
 
-// when button pressed
-// submitBtn.addEventListener("click", (e) => {e.preventDefault()
-//   patients.push (getValues())
-//   patients.push({})
-//   console.log(patients)
-// });
+
+// when image is uploaded, alert
+
+
 
 
 
@@ -203,8 +218,7 @@ document.getElementById("submitBtn").addEventListener("click", function() {
   console.log(string);
   localStorage.setItem("patients", string)
 
-  // //switch screens
-  // document.location.href = "scanner.html";
+  document.location.href = "scanner.html";
 
 })
 ;

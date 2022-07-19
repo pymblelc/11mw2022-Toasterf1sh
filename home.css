@@ -129,6 +129,8 @@ body {
   display: flex;
 
 
+
+
 }
 
 
@@ -279,9 +281,8 @@ body {
   display: none;
 }
 
-.image-upload i {
-  cursor: pointer;
-}
+
+
 
 .image-upload2 > input {
   display: none;
@@ -529,3 +530,17 @@ body {
   text-indent: 30px; 
   margin-bottom: 0px;
 }
+
+.text {
+  color: #F2E9E4;
+  font-weight: 300;
+  font-size: small;
+
+  margin-right: 10px;
+
+}
+
+.space4 {
+  line-height: 0em;
+}
+

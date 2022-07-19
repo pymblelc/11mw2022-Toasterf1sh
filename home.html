@@ -46,12 +46,10 @@
 
  
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
     <p class="menuClass">Menu</p>
     <hr></hr>
-    <a href="about.html">About</a>
-    <a href="patientData.html">Patient Record</a>
-    <a href="blank.html">Clients</a>
+    <a class="record" href="scanner.html">Patient Record</a>
     <a href="login.html">Logout</a>
   </div>
 
@@ -122,14 +120,14 @@
               <label for="medicareNumber" class="medicareLabel">
                 Medicare no.</label
               >
-              <textarea
-                type=""
+              <input
+                type="text"
                 id="medicareNumber"
                 name="medicareNumber"
                 rows="1"
                 cols="15"
               >
-              </textarea>
+              </input>
             </div>
           </div>
           <!--end of left side-->
@@ -138,19 +136,18 @@
             <!-- right side -->
             <div class="phone">
               <label for="phoneNumber" class="phoneNumber"> Phone no.</label>
-              <textarea
-                type=""
+              <input
+                type="text"
                 id="phoneNumber"
                 name="phoneNumber"
-              
               >
-              </textarea>
+            </input>
             </div>
 
             <div class="email1">
               <label for="email" class="email"> Email </label>
-              <textarea type="" id="email" name="email">
-              </textarea>
+              <input type="text" id="email" name="email">
+            </input>
             </div>
           </div>
           <!--end of right side-->
@@ -165,7 +162,7 @@
               <input
                 type="radio"
                 id="male"
-                name="male"
+                name="sex"
                 value="male"
                 class="text"
               />
@@ -174,7 +171,7 @@
               <input
                 type="radio"
                 id="female"
-                name="female"
+                name="sex"
                 value="female"
                 class="text"
               />
@@ -183,7 +180,7 @@
               <input
                 type="radio"
                 id="other"
-                name="other"
+                name="sex"
                 value="other"
                 class="text"
               />
@@ -193,8 +190,7 @@
         </div>
         <!--end of sex div-->
         <p> </p>
-        <button id="autofill">autofill form</button>
-
+       
       </div>
       <!--end of patientInfo-->
 
@@ -205,7 +201,7 @@
         <!-- upload images here -->
         <div class="image-upload">
           
-          <input id="imageInput" type="file" />
+          <p id="imageInput"> </p>
           <label for="imageInput">
             <i class="material-symbols-outlined md-200">
               add_photo_alternate

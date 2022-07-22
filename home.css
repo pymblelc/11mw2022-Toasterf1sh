@@ -1,0 +1,546 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #4a4e69;
+  margin: 0;
+  padding: 0;
+}
+
+/* autofill form button */
+#autofill {
+  background-color: #9A8C98;
+  color: #F2E9E4;
+  border: none ;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+
+}
+
+
+/* the actual menu icon */
+.material-symbols-outlined.md-100 {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+}
+
+/* div for menu icon */
+.menuIcon {
+  margin-right: 25px;
+  margin-left: auto;
+  margin-top: 16px;
+
+}
+
+/* "stuff" = large div that everything is located in */
+.stuff {
+  margin: 30px;
+  background-color: #535771;
+  border-radius: 5px;
+} 
+
+/* patient details heading */
+.patientDetails{
+  color: #f2e9e4;
+  text-indent: 30px;
+  padding-top: 10px;
+  font-weight: 400;
+}
+
+/* "patientInfo" = contains name, birthday, etc */
+.patientInfo {
+  background-color: #9A8C98;
+  border-radius: 5px;
+  margin: 20px;
+  max-width: auto;
+
+}
+
+/* INPUT NAME */
+
+/* first and last name inputs (the form) */
+.inputName{
+  display: flex;
+  margin-left: 20px;
+}
+
+/* first name  */
+.firstNameInput {
+  font-size: medium;
+  color: #f2e9e4;
+  font-weight: 300;
+}
+
+/* last name */
+.lastNameInput {
+  font-size: medium;
+  color: #f2e9e4;
+  margin-left: 20px;
+  font-weight: 300;
+}
+
+/* the div for both of them */
+.fullNameInput {
+  margin-left: 10px;
+  display: flex;
+}
+
+
+.birthdayLabel{
+  color:#f2e9e4;
+  font-weight: 300;
+
+}
+
+.birthday {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#birthday {
+  font-family: "Roboto", sans-serif ;
+  color:#22223b;
+  font-weight: 300;
+  margin-left: 31px;
+  height: 20px;
+  width: 150px;
+
+}
+
+#medicareNumber {
+  margin-left: 28px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+}
+.medicare{
+  font-weight: 300;
+  color: #f2e9e4;
+  display: flex;
+
+  
+}
+
+.patient2 {
+  background-color: #9A8C98;
+  display: flex;
+
+
+
+
+}
+
+
+.left {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+  max-width: 50%;
+
+}
+
+/* right side of things */
+
+.right {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+  max-width: 50%;
+
+}
+
+.phoneNumber { /*label*/
+  font-weight: 300;
+  color:#f2e9e4;
+  margin-right: 31px;
+  margin-bottom: 12px;
+
+}
+.phone { /*div*/
+  display: flex;
+  margin-bottom: 12px;
+  height: 20px;
+  margin-right: 20px;
+
+}
+#phoneNumber {
+  height: 18px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+
+.email1 { /*div*/
+  display: flex;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.email {
+  font-weight: 300;
+  color:#f2e9e4;
+  margin-right: 63px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+}
+
+#email {
+  height: 18px;
+  width: 150px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+
+/* UPLOAD IMAGES */
+
+/* "space" = space between the divs */
+.space {
+  color: #535771;
+}
+
+/* "space2" = space between text */
+.space2 {
+  color: #535771;
+  line-height: 0em;
+}
+
+.space3 {
+  color: #535771;
+  margin-top: 87px;
+}
+
+/*menu bar at the top */
+.menu {
+  color: #f2e9e4;
+  background-color: #22223b;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  font-size: larger;
+  display: flex;
+}
+
+/* text within the menu bar at the top */
+.myhealth {
+  color: #f2e9e4;
+  text-indent: 20px;
+}
+
+/* text between upload image buttons */
+.importText {
+  color: #f2e9e4;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  
+}
+
+/* div that contains the upload image buttons */
+.uploadDiv {
+  text-align: center;
+  background-color: #22223b;
+  /* margin-left: 10%; */
+  /* margin-right: auto; */
+  margin-top: 30px;
+  padding-bottom: 60px;
+  padding-top: 50px;
+  border-radius: 5px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: dotted;
+  border-color: white;
+}
+
+/* image icon - the actual icon in the button */
+.material-symbols-outlined.md-200 {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  color: #f2e9e4;
+  font-size: 200px !important;
+}
+
+/* image icon button */
+.imageIcon {
+  padding-top: 10px;
+  background-color: #4a4e69;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* hides the input and replaces it with the label */
+.image-upload > input {
+  display: none;
+}
+
+
+
+
+.image-upload2 > input {
+  display: none;
+}
+
+.image-upload2 p {
+  cursor: pointer;
+}
+
+/* "upload" text - as a button */
+.upload {
+  color: #f2e9e4;
+  background-color: #9A8C98;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+  border: #C9ADA7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 30%;
+  border-radius: 5px;
+}
+
+/* "Input Symptoms */
+.symptoms {
+  color: #f2e9e4;
+  line-height: 0em;
+}
+
+/* div for the entire right hand side - checkboxes */
+.symptomsList {
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-bottom: 30px;
+}
+
+.symptomsList2 {
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-bottom: 30px;
+}
+
+
+/* "source?" = the text where i reference stuff */
+.source {
+  color: #f2e9e4;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: small;
+}
+/* "divider1" = the space between each checkbox */
+.divider1 {
+  border: none; /*placeholder*/
+  color: #535771;
+  line-height: 0em;
+
+
+}
+
+/* the full symptoms list */
+.fullSymptomsList {
+  display: flex;
+}
+
+/* start of customisation for checkbox */
+/* customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #f2e9e4;
+  font-size: medium;
+  font-weight: 300;
+  
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #9A8C98;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #22223B;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid #F2E9E4;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* end of customisation for checkbox */
+
+/* start of customisation for radio buttons */
+
+/*the entire div*/
+.sex {
+  font-weight: 300;
+  color: #f2e9e4;
+  margin-bottom: none;
+
+}
+/* the form */
+.sexForm {
+  display: flex;
+}
+
+/*the title*/
+.sexText {
+  margin-left: 30px;
+  margin-bottom: none;
+  margin-top: 18px;
+}
+
+/* actual radio button*/
+.text {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+/* the label next to the button */
+.text1{
+  margin-left: 5px;
+}
+
+.submitBtn {
+  color: #f2e9e4;
+  background-color: #9A8C98;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+  border: #C9ADA7;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+/* SIDE NAVIATION MENU */
+  
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #9A8C98;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #F2E9E4;
+  display: block;
+  transition: 0.3s;
+  
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* menu text */
+.menuClass {
+  color: #f2e9e4;
+  font-size: 25px;
+  text-indent: 30px; 
+  margin-bottom: 0px;
+}
+
+.text {
+  color: #F2E9E4;
+  font-weight: 300;
+  font-size: small;
+
+  margin-right: 10px;
+
+}
+
+.space4 {
+  line-height: 0em;
+}
+

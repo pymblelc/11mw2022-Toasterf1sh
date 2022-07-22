@@ -188,7 +188,7 @@ if ((array[array.length - 1].dehydration == true)) {
   document.getElementById("dehydration").style.color = "orange"
 
 } else {
-  document.getElementById("dehydration").innerText = "Dehydration identified";
+  document.getElementById("dehydration").innerText = "Dehydration not identified";
 }
 
 if ((array[array.length - 1].fatigue == true)) {
@@ -196,7 +196,7 @@ if ((array[array.length - 1].fatigue == true)) {
   document.getElementById("fatigue").style.color = "orange"
 
 } else {
-  document.getElementById("fatigue").innerText = "Fatigue identified";
+  document.getElementById("fatigue").innerText = "Fatigue not identified";
 }
 
 if ((array[array.length - 1].fever == true)) {
